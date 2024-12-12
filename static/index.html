@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERSE.ID - Asisten Penyidik Polri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+        }
+
+        .text-glow-red {
+            text-shadow: 0 0 10px rgba(196, 30, 58, 0.5);
+        }
+
+        .tracking-tech {
+            letter-spacing: 0.05em;
+        }
+
+        .glass-button {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .glass-button:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="content">
+        <!-- Navbar -->
+        <nav class="fixed w-full z-50 top-0 gradient-bg border-b border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <svg class="h-8 w-8 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold text-white">RESERSE.ID</span>
+                    </div>
+                    <div class="hidden md:block">
+                        <button onclick="window.location.href='https://chat.reserse.id'" class="px-6 py-2 rounded-lg text-base font-bold bg-gradient-to-r from-red-600 to-red-700 text-white hover:from-red-700 hover:to-red-800 transition-all transform hover:scale-105">
+                            Analisa Kasus
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="min-h-screen pt-20 flex items-center gradient-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+                <div class="font-mono uppercase mb-3 sm:mb-4 tracking-widest text-xs sm:text-sm text-glow-red" style="color: #C41E3A">
+                    Developed by // Ibrahim Sandre
+                </div>
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-3 sm:mb-4 tracking-tech uppercase">
+                    <span class="text-white">RESERSE</span>
+                    <span class="text-red-600 text-[0.7em]"> // AI</span>
+                </h1>
+                <div class="text-lg sm:text-2xl md:text-3xl font-mono tracking-wider text-white mb-6">
+                    ASISTEN PENYIDIK POLRI
+                </div>
+                <p class="max-w-3xl mx-auto text-base sm:text-lg text-gray-300 mb-8" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)">
+                    Alat bantu penyidik berbasis Ai,
+                    Analisa kasus hukum berbasis Artificial Intelligence dengan teknologi RAG (Retrieval Augmented Generation).
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4 sm:px-0">
+                    <a href="https://chat.reserse.id" class="w-full sm:w-auto">
+                        <button class="glass-button w-full px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-bold flex items-center justify-center">
+                            Analisa Kasus
+                            <svg class="ml-2 w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </a>
+                    <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-bold transition-all border-2 border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10">
+                        Lihat Demo
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-24 gradient-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white">
+                    Alat Bantu Penyelidikan
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature cards will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Particles.js configuration
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 100,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: ['#666666', '#888888', '#AAAAAA']
+                },
+                shape: {
+                    type: 'circle'
+                },
+                opacity: {
+                    value: 1,
+                    random: false
+                },
+                size: {
+                    value: 3.5,
+                    random: true,
+                    anim: {
+                        enable: true,
+                        speed: 2,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#888888',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'grab'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 140,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    push: {
+                        particles_nb: 4
+                    }
+                }
+            },
+            retina_detect: true
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('[aria-label="Menu"]');
+        const mobileMenu = document.querySelector('#mobile-menu');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
