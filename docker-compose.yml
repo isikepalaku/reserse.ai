@@ -4,7 +4,7 @@ services:
   web:
     image: ghcr.io/isikepalaku/reserseai:latest
     ports:
-      - "80:80"
+      - "8080:80"
     restart: unless-stopped
     volumes:
       - type: bind
