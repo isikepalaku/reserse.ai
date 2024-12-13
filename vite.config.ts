@@ -1,8 +1,4 @@
-git pull
-docker-compose down
-docker rmi ghcr.io/isikepalaku/reserseai:latest
-docker-compose pull
-docker-compose up -dimport { defineConfig } from 'vite';
+import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
