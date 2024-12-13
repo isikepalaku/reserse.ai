@@ -14,4 +14,9 @@ export default defineConfig({
     assetsDir: 'assets',
     emptyOutDir: true,
   },
+  server: {
+    host: '0.0.0.0',
+    port: 5174,
+    strictPort: true,
+  },
 });
