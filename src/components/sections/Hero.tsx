@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
         <div className="max-w-7xl mx-auto text-center pt-16 sm:pt-20 px-4">
           <div className="flex items-center justify-center mb-6 sm:mb-8">
             <img 
-              src="/img/maskable-icon.png" 
+              src="/static/img/maskable-icon.png" 
               alt="Reverse AI Logo" 
               className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
               style={{ filter: 'drop-shadow(0 0 10px rgba(196, 30, 58, 0.5))' }}

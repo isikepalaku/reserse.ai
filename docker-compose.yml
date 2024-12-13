@@ -11,10 +11,6 @@ services:
         source: ./nginx.conf
         target: /etc/nginx/conf.d/default.conf
         read_only: true
-      - type: bind
-        source: ./src/static
-        target: /usr/share/nginx/html/static
-        read_only: true
     networks:
       - app-network
 
