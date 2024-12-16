@@ -3,6 +3,8 @@ import { ArrowRight } from 'lucide-react';
 import NetworkAnimation from '../animations/NetworkAnimation';
 import MapBackground from '../animations/MapBackground';
 import { theme } from '../../styles/theme';
+import Lottie from 'lottie-react';
+import logoAnimation from '../../../static/img/logo.json';
 
 const Hero: React.FC = () => {
   return (
@@ -49,10 +51,10 @@ const Hero: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto text-center pt-16 sm:pt-20 px-4">
           <div className="flex items-center justify-center mb-6 sm:mb-8">
-            <img 
-              src="/static/img/maskable-icon.png" 
-              alt="Reverse AI Logo" 
-              className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+            <Lottie
+              animationData={logoAnimation}
+              className="w-32 h-32 sm:w-48 sm:h-48"
+              loop={true}
               style={{ filter: 'drop-shadow(0 0 10px rgba(196, 30, 58, 0.5))' }}
             />
           </div>
@@ -60,7 +62,7 @@ const Hero: React.FC = () => {
             className="font-mono uppercase mb-3 sm:mb-4 tracking-widest text-xs sm:text-sm text-glow-red" 
             style={{ color: '#C41E3A' }}
           >
-            Developed by // Ibrahim Sandre
+            Under Development // Ibrahim Sandre
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-3 sm:mb-4 tracking-tech uppercase" style={{ letterSpacing: '0.05em' }}>
             <span style={{ color: '#FFFFFF' }}>RESERSE</span>

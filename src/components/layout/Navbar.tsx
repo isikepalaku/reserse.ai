@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Shield, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { theme } from '../../styles/theme';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ['Features', 'Case Studies', 'Contact'];
+  const menuItems = ['Features', 'Case Studies', 'Contact']
 
   return (
     <nav 
@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Shield style={{ color: theme.colors.primary.DEFAULT }} className="h-8 w-8" />
+            <img src="/static/img/maskable-icon.png" alt="Reserse Logo" className="h-8 w-8" />
             <span className="ml-2 text-xl font-bold" style={{ color: theme.colors.text.primary }}>
               RESERSE.ID
             </span>
